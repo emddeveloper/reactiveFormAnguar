@@ -1,0 +1,17 @@
+mat-card {
+  width: 400px;
+  background-color: #ff4081;
+  padding: 30px;
+  font-weight: bold;
+  color: rgb(44, 41, 39);
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.group {
+  display: flow-root;
+  margin-top: 40px;
+}

@@ -1,0 +1,14 @@
+<mat-card color="primary" *ngIf="cardDetails">
+  <div>Card Number.</div>
+  <div>{{ cardDetails.cardnumber }}</div>
+  <div class="group">
+    <div class="left">
+      <div>Name</div>
+      <div>{{ cardDetails.name }}</div>
+    </div>
+    <div class="right">
+      <div>Expiry Date</div>
+      <div>{{ cardDetails.expiry }}</div>
+    </div>
+  </div>
+</mat-card>

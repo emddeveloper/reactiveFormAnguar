@@ -1,0 +1,20 @@
+<mat-form-field class="example-full-width">
+  <mat-label>{{ label }}</mat-label>
+  <input type="text" matInput [formControl]="control" [placeholder]="label" s />
+
+  <mat-error *ngIf="control.hasError('required')">
+    {{ label }} is <strong>required</strong>
+  </mat-error>
+  <mat-error *ngIf="control.hasError('minlength')">
+    {{ label }} Min length must be
+    <strong>{{ control.errors.minlength.requiredLength }} digits</strong>
+  </mat-error>
+  <mat-error *ngIf="control.hasError('maxlength')">
+    {{ label }} Max length must be
+    <strong>{{ control.errors.maxlength.requiredLength }} digits</strong>
+  </mat-error>
+  <mat-error *ngIf="control.hasError('pattern')">
+    {{ label }} Date should be in format of
+    <strong>MM/YY</strong>
+  </mat-error>
+</mat-form-field>
